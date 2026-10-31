@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#2563EB">
+  <title>Kebijakan Privasi ResumeQ / ResumeQ Privacy Policy</title>
+  <meta name="description" content="Kebijakan privasi aplikasi ResumeQ.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232563EB'/%3E%3Ccircle cx='29' cy='29' r='14' fill='none' stroke='white' stroke-width='6'/%3E%3Cline x1='40' y1='40' x2='51' y2='51' stroke='%23FFB020' stroke-width='8' stroke-linecap='round'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg:#F4F8FF; --sheet:#FFFFFF; --soft:#EAF1FF; --fg:#1B2B4B; --head:#0F2A5F; --muted:#5B6B86;
+      --line:#D8E0EE; --blue:#2563EB; --amber:#FFB020; --amber-soft:#FFF4D6; --link:#1D4ED8;
+      --hero-a:#2563EB; --hero-b:#1E4FC4; --shadow:rgba(15,42,95,.10);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:#0A1730; --sheet:#10224A; --soft:#173060; --fg:#DCE6F7; --head:#FFFFFF; --muted:#9FB0CC;
+        --line:#26427A; --blue:#6EA8FF; --amber:#FFB020; --amber-soft:#2E2A1C; --link:#8DB9FF;
+        --hero-a:#1D4ED8; --hero-b:#16358F; --shadow:rgba(0,0,0,.35);
+      }
+    }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } }
+    body {
+      margin:0; background:var(--bg); color:var(--fg);
+      font:16px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      padding-bottom:env(safe-area-inset-bottom,0px);
+    }
+    a { color:var(--link); text-underline-offset:3px; }
+    a:focus-visible, button:focus-visible { outline:3px solid var(--amber); outline-offset:3px; border-radius:6px; }
+    code { font:.9em ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; background:rgba(255,255,255,.18); padding:2px 8px; border-radius:6px; }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      position:relative; overflow:hidden; color:#fff;
+      background:linear-gradient(160deg,var(--hero-a),var(--hero-b));
+      padding:calc(28px + env(safe-area-inset-top,0px)) 20px 72px;
+    }
+    .hero::before { content:""; position:absolute; width:260px; height:260px; border-radius:50%; background:var(--amber); right:-70px; top:-90px; }
+    .hero::after { content:""; position:absolute; width:150px; height:150px; border-radius:50%; background:rgba(255,255,255,.10); right:90px; bottom:-60px; }
+    .hero-in { position:relative; z-index:1; max-width:760px; margin:0 auto; }
+    .brand { display:flex; align-items:center; gap:12px; text-decoration:none; color:#fff; width:max-content; }
+    .brand svg { width:44px; height:44px; flex:none; }
+    .brand span { font-size:1.45rem; font-weight:800; letter-spacing:.2px; }
+    .brand b { color:var(--amber); font-weight:800; }
+    .hero h1 { font-size:clamp(1.9rem,5.5vw,2.7rem); line-height:1.15; margin:36px 0 8px; font-weight:800; max-width:14em; }
+    .hero p.sub { margin:0 0 20px; color:rgba(255,255,255,.88); max-width:34em; }
+    .chips { display:flex; flex-wrap:wrap; gap:8px; margin:0 0 22px; }
+    .chip { background:rgba(255,255,255,.16); border-radius:999px; padding:5px 14px; font-size:.88rem; }
+    nav.lang { display:flex; gap:8px; }
+    nav.lang a {
+      padding:9px 20px; border-radius:999px; text-decoration:none; font-weight:700; font-size:.95rem;
+      color:#fff; border:1.5px solid rgba(255,255,255,.7);
+    }
+    nav.lang a[aria-current="true"] { background:#fff; color:#1D4ED8; border-color:#fff; }
+    nav.lang a:hover { background:var(--amber); border-color:var(--amber); color:#0F2A5F; }
+
+    section[hidden] { display:none; }
+
+    /* ---------- Sheet ---------- */
+    main { max-width:760px; margin:-44px auto 0; padding:0 16px 56px; position:relative; z-index:2; }
+    section {
+      background:var(--sheet); border-radius:24px; padding:8px 28px 32px; margin-bottom:24px;
+      box-shadow:0 10px 30px var(--shadow); scroll-margin-top:16px;
+    }
+    h2 { font-size:1.45rem; color:var(--head); margin:26px 0 12px; line-height:1.25; }
+    h2::after { content:""; display:block; width:44px; height:5px; border-radius:3px; background:var(--amber); margin-top:10px; }
+    h3 { font-size:1.05rem; color:var(--head); margin:28px 0 6px; padding-left:12px; border-left:4px solid var(--blue); line-height:1.35; }
+    p, li { color:var(--fg); }
+    p { margin:8px 0; }
+    ul { padding-left:22px; }
+    li { margin:8px 0; }
+    li::marker { color:var(--blue); }
+    strong { color:var(--head); }
+
+    .table-wrap { overflow-x:auto; margin:12px 0; border:1px solid var(--line); border-radius:14px; }
+    table { width:100%; border-collapse:collapse; font-size:.95rem; min-width:480px; }
+    th, td { text-align:left; vertical-align:top; padding:11px 14px; }
+    th { background:var(--blue); color:#fff; font-weight:700; }
+    @media (prefers-color-scheme: dark) { th { background:#1D4ED8; } }
+    td { border-top:1px solid var(--line); }
+    tbody tr:nth-child(even) td, table tr:nth-child(odd):not(:first-child) td { background:transparent; }
+    table tr:nth-child(3) td, table tr:nth-child(5) td { background:var(--soft); }
+
+    .box { background:var(--amber-soft); border:1px solid var(--amber); border-left-width:6px; border-radius:14px; padding:6px 18px; margin:12px 0; }
+    .box p { margin:12px 0; }
+
+    footer { max-width:760px; margin:0 auto; padding:0 20px 40px; text-align:center; color:var(--muted); font-size:.9rem; }
+
+    @media (max-width:520px) {
+      section { padding:4px 18px 26px; border-radius:20px; }
+      .hero { padding-bottom:64px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-in">
+    <a class="brand" href="#id" aria-label="ResumeQ">
+      <svg viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="16" fill="#fff"/>
+        <circle cx="29" cy="29" r="14" fill="none" stroke="#2563EB" stroke-width="6"/>
+        <line x1="40" y1="40" x2="51" y2="51" stroke="#FFB020" stroke-width="8" stroke-linecap="round"/>
+      </svg>
+      <span>Resume<b>Q</b></span>
+    </a>
+    <h1>Kebijakan Privasi<br>Privacy Policy</h1>
+    <p class="sub">Kebijakan Privasi / Privacy Policy</p>
+    <div class="chips">
+      <span class="chip">Berlaku sejak / Effective: 31 Oktober 2026</span>
+      <span class="chip">Aplikasi / App: ResumeQ</span>
+    </div>
+    <nav class="lang" aria-label="Bahasa / Language"><a href="#id" data-lang="id" aria-current="true">Bahasa Indonesia</a><a href="#en" data-lang="en">English</a></nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===================== BAHASA INDONESIA ===================== -->
+  <section id="id" lang="id">
+    <h2>Kebijakan Privasi (Bahasa Indonesia)</h2>
+    <p>Kebijakan ini menjelaskan data apa yang dikumpulkan aplikasi ResumeQ ("kami", "aplikasi"), untuk apa data itu dipakai, dan bagaimana kamu bisa menghapusnya.</p>
+
+    <h3>1. Data yang disimpan di perangkat</h3>
+    <p>ResumeQ bekerja secara <strong>offline</strong>. Isi resume (nama, kontak, pengalaman, pendidikan, keahlian, proyek, sertifikat, bahasa, foto resume) dan pengaturan (tema, bahasa, warna tersimpan) disimpan di perangkat kamu. Data ini tidak dikirim ke server kecuali kamu masuk dan menyinkronkan resume.</p>
+
+    <h3>2. Data yang dikumpulkan saat kamu masuk dengan Google</h3>
+    <div class="table-wrap">
+    <table>
+      <tr><th>Data</th><th>Tujuan</th></tr>
+      <tr><td>Nama, email, foto akun Google, ID pengguna Firebase</td><td>Membuat dan menampilkan akun kamu</td></tr>
+      <tr><td>Isi resume yang kamu sinkronkan (tanpa foto resume)</td><td>Menyimpan cadangan dan memulihkan resume di perangkat lain</td></tr>
+      <tr><td>Saldo poin</td><td>Fitur poin di aplikasi</td></tr>
+      <tr><td>Token notifikasi (FCM), platform, versi aplikasi</td><td>Mengirim notifikasi ke perangkat kamu</td></tr>
+    </table>
+    </div>
+    <p>Data akun disimpan di Google Firebase (Authentication dan Cloud Firestore), dan hanya bisa dibaca oleh akun kamu sendiri.</p>
+
+    <h3>3. Data yang dikumpulkan otomatis</h3>
+    <ul>
+      <li><strong>Analitik (Firebase Analytics):</strong> ID instalasi anonim yang dibuat oleh aplikasi, merek/model perangkat, sistem operasi, dan versi aplikasi, saat aplikasi dibuka. Dipakai untuk memahami perangkat pengguna dan memperbaiki aplikasi. ID ini bukan ID hardware dan terhapus saat aplikasi di-uninstall.</li>
+      <li><strong>Iklan (Google AdMob):</strong> aplikasi menampilkan iklan. AdMob dapat mengumpulkan ID iklan perangkat, alamat IP, dan informasi perangkat untuk menampilkan dan mengukur iklan. Kamu bisa mereset atau menonaktifkan personalisasi iklan di pengaturan Google perangkat.</li>
+    </ul>
+
+    <h3>4. Berbagi data</h3>
+    <p>Kami <strong>tidak menjual</strong> data kamu. Data hanya diproses oleh penyedia layanan berikut untuk menjalankan aplikasi: Google Firebase (login, database, notifikasi, analitik) dan Google AdMob (iklan). Lihat <a href="https://policies.google.com/privacy" rel="noopener">Kebijakan Privasi Google</a>.</p>
+
+    <h3>5. Keamanan</h3>
+    <p>Data dikirim melalui koneksi terenkripsi (HTTPS). Aturan akses database membatasi agar setiap akun hanya bisa membaca dan mengubah datanya sendiri.</p>
+
+    <h3>6. Penyimpanan dan penghapusan data</h3>
+    <div class="box">
+      <p><strong>Hapus akun dari aplikasi:</strong> buka <em>Saya &rarr; Hapus akun</em>. Ini menghapus secara permanen akun login, data akun di server (resume tersinkron, poin, token notifikasi), serta resume milik akun itu di perangkat. Tindakan ini tidak bisa dibatalkan.</p>
+      <p><strong>Tanpa aplikasi:</strong> kirim email ke <a href="mailto:qj.fdevs@gmail.com?subject=Hapus%20akun%20ResumeQ">qj.fdevs@gmail.com</a> dengan judul "Hapus akun ResumeQ" dari alamat email akun Google kamu. Kami memproses permintaan dalam 30 hari.</p>
+    </div>
+    <p>Data akun disimpan selama akun aktif. Resume yang tidak disinkronkan hanya ada di perangkat dan terhapus saat aplikasi di-uninstall. Data analitik disimpan sesuai pengaturan retensi Firebase Analytics (maksimal 14 bulan).</p>
+
+    <h3>7. Anak-anak</h3>
+    <p>ResumeQ ditujukan untuk pengguna berusia 13 tahun ke atas dan tidak sengaja mengumpulkan data anak di bawah usia tersebut.</p>
+
+    <h3>8. Perubahan kebijakan</h3>
+    <p>Kebijakan ini dapat diperbarui. Tanggal berlaku di atas akan diubah setiap ada perubahan.</p>
+
+    <h3>9. Kontak</h3>
+    <p>Pertanyaan tentang privasi: <a href="mailto:qj.fdevs@gmail.com">qj.fdevs@gmail.com</a></p>
+  </section>
+
+  <!-- ========================= ENGLISH ========================= -->
+  <section id="en" lang="en">
+    <h2>Privacy Policy (English)</h2>
+    <p>This policy explains what data the ResumeQ app ("we", "the app") collects, what it is used for, and how you can delete it.</p>
+
+    <h3>1. Data stored on your device</h3>
+    <p>ResumeQ works <strong>offline</strong>. Resume content (name, contact details, experience, education, skills, projects, certificates, languages, resume photo) and settings (theme, language, saved colors) are stored on your device. This data is not sent to a server unless you sign in and sync your resumes.</p>
+
+    <h3>2. Data collected when you sign in with Google</h3>
+    <div class="table-wrap">
+    <table>
+      <tr><th>Data</th><th>Purpose</th></tr>
+      <tr><td>Google account name, email, photo, Firebase user ID</td><td>Create and show your account</td></tr>
+      <tr><td>Content of resumes you sync (without the resume photo)</td><td>Back up and restore your resumes on other devices</td></tr>
+      <tr><td>Points balance</td><td>The in-app points feature</td></tr>
+      <tr><td>Notification token (FCM), platform, app version</td><td>Send notifications to your device</td></tr>
+    </table>
+    </div>
+    <p>Account data is stored in Google Firebase (Authentication and Cloud Firestore) and can only be read by your own account.</p>
+
+    <h3>3. Data collected automatically</h3>
+    <ul>
+      <li><strong>Analytics (Firebase Analytics):</strong> an anonymous install ID generated by the app, device brand/model, operating system, and app version, when the app is opened. Used to understand our users' devices and improve the app. This ID is not a hardware ID and is removed when the app is uninstalled.</li>
+      <li><strong>Ads (Google AdMob):</strong> the app shows ads. AdMob may collect the device advertising ID, IP address, and device information to serve and measure ads. You can reset or opt out of ad personalization in your device's Google settings.</li>
+    </ul>
+
+    <h3>4. Sharing</h3>
+    <p>We <strong>do not sell</strong> your data. It is only processed by these service providers to run the app: Google Firebase (sign-in, database, notifications, analytics) and Google AdMob (ads). See the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</p>
+
+    <h3>5. Security</h3>
+    <p>Data is sent over encrypted connections (HTTPS). Database access rules ensure each account can only read and change its own data.</p>
+
+    <h3>6. Retention and deletion</h3>
+    <div class="box">
+      <p><strong>Delete your account in the app:</strong> go to <em>Me &rarr; Delete account</em>. This permanently deletes your sign-in account, your account data on the server (synced resumes, points, notification tokens), and that account's resumes on the device. This cannot be undone.</p>
+      <p><strong>Without the app:</strong> email <a href="mailto:qj.fdevs@gmail.com?subject=Delete%20ResumeQ%20account">qj.fdevs@gmail.com</a> with the subject "Delete ResumeQ account" from your Google account's email address. We process requests within 30 days.</p>
+    </div>
+    <p>Account data is kept while your account is active. Resumes you don't sync exist only on your device and are removed when you uninstall the app. Analytics data is kept according to Firebase Analytics retention settings (up to 14 months).</p>
+
+    <h3>7. Children</h3>
+    <p>ResumeQ is intended for users aged 13 and over and does not knowingly collect data from children under that age.</p>
+
+    <h3>8. Changes</h3>
+    <p>This policy may be updated. The effective date above changes whenever it does.</p>
+
+    <h3>9. Contact</h3>
+    <p>Privacy questions: <a href="mailto:qj.fdevs@gmail.com">qj.fdevs@gmail.com</a></p>
+  </section>
+
+</main>
+
+<footer>ResumeQ</footer>
+
+
+<script>
+(function () {
+  var tabs = document.querySelectorAll('nav.lang a[data-lang]');
+  var panels = { id: document.getElementById('id'), en: document.getElementById('en') };
+  function show(lang) {
+    if (!panels[lang]) lang = 'id';
+    Object.keys(panels).forEach(function (k) { panels[k].hidden = (k !== lang); });
+    tabs.forEach(function (t) {
+      if (t.dataset.lang === lang) t.setAttribute('aria-current', 'true');
+      else t.removeAttribute('aria-current');
+    });
+    document.documentElement.lang = lang;
+  }
+  document.querySelectorAll('a[href="#id"], a[href="#en"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      var lang = a.getAttribute('href').slice(1);
+      show(lang);
+      try { history.replaceState(null, '', '#' + lang); } catch (err) {}
+    });
+  });
+  window.addEventListener('hashchange', function () { show(location.hash.slice(1)); });
+  show(location.hash === '#en' ? 'en' : 'id');
+})();
+</script>
+
+</body>
+</html>
