@@ -105,7 +105,7 @@
     <h1>Kebijakan Privasi<br>Privacy Policy</h1>
     <p class="sub">Kebijakan Privasi / Privacy Policy</p>
     <div class="chips">
-      <span class="chip">Berlaku sejak / Effective: 31 Oktober 2026</span>
+      <span class="chip">Berlaku sejak / Effective: 2 November 2026</span>
       <span class="chip">Aplikasi / App: ResumeQ</span>
     </div>
     <nav class="lang" aria-label="Bahasa / Language"><a href="#id" data-lang="id" aria-current="true">Bahasa Indonesia</a><a href="#en" data-lang="en">English</a></nav>
@@ -121,18 +121,20 @@
 
     <h3>1. Data yang disimpan di perangkat</h3>
     <p>ResumeQ bekerja secara <strong>offline</strong>. Isi resume (nama, kontak, pengalaman, pendidikan, keahlian, proyek, sertifikat, bahasa, foto resume) dan pengaturan (tema, bahasa, warna tersimpan) disimpan di perangkat kamu. Data ini tidak dikirim ke server kecuali kamu masuk dan menyinkronkan resume.</p>
+    <p><strong>Pemrosesan di perangkat (on-device):</strong> fitur terjemahan dan deteksi bahasa (Google ML Kit) berjalan sepenuhnya di perangkat; model bahasa diunduh sekali lalu dipakai offline, dan <strong>teks resume kamu tidak pernah dikirim ke server</strong> untuk diterjemahkan. Import resume dari PDF (buatan ResumeQ atau "Save to PDF" LinkedIn) juga dibaca dan diproses di perangkat; berkas PDF tidak diunggah ke server kami.</p>
 
     <h3>2. Data yang dikumpulkan saat kamu masuk dengan Google</h3>
     <div class="table-wrap">
-    <table>
-      <tr><th>Data</th><th>Tujuan</th></tr>
-      <tr><td>Nama, email, foto akun Google, ID pengguna Firebase</td><td>Membuat dan menampilkan akun kamu</td></tr>
-      <tr><td>Isi resume yang kamu sinkronkan (tanpa foto resume)</td><td>Menyimpan cadangan dan memulihkan resume di perangkat lain</td></tr>
-      <tr><td>Saldo poin</td><td>Fitur poin di aplikasi</td></tr>
-      <tr><td>Token notifikasi (FCM), platform, versi aplikasi</td><td>Mengirim notifikasi ke perangkat kamu</td></tr>
-    </table>
+      <table>
+        <tr><th>Data</th><th>Tujuan</th></tr>
+        <tr><td>Nama, email, foto akun Google, ID pengguna Firebase</td><td>Membuat dan menampilkan akun kamu</td></tr>
+        <tr><td>Isi resume yang kamu sinkronkan (tanpa foto resume)</td><td>Menyimpan cadangan dan memulihkan resume di perangkat lain</td></tr>
+        <tr><td>Saldo poin</td><td>Fitur poin di aplikasi (menambah lewat menonton iklan, memakai untuk membuat/menduplikat/import resume dan membuka PDF)</td></tr>
+        <tr><td>Token notifikasi (FCM), platform, versi aplikasi</td><td>Mengirim notifikasi ke perangkat kamu</td></tr>
+      </table>
     </div>
     <p>Data akun disimpan di Google Firebase (Authentication dan Cloud Firestore), dan hanya bisa dibaca oleh akun kamu sendiri.</p>
+    <p><strong>Verifikasi iklan berhadiah (SSV):</strong> saat kamu menonton iklan berhadiah untuk menambah poin, ID pengguna Firebase kamu dikirim ke server verifikasi kami (berjalan di Vercel) melalui Google AdMob, agar poin diberikan ke akun yang benar dan untuk mencegah penyalahgunaan. Yang dikirim hanya ID pengguna tersebut — bukan nama, email, atau isi resume kamu.</p>
 
     <h3>3. Data yang dikumpulkan otomatis</h3>
     <ul>
@@ -151,6 +153,7 @@
       <p><strong>Hapus akun dari aplikasi:</strong> buka <em>Saya &rarr; Hapus akun</em>. Ini menghapus secara permanen akun login, data akun di server (resume tersinkron, poin, token notifikasi), serta resume milik akun itu di perangkat. Tindakan ini tidak bisa dibatalkan.</p>
       <p><strong>Tanpa aplikasi:</strong> kirim email ke <a href="mailto:qj.fdevs@gmail.com?subject=Hapus%20akun%20ResumeQ">qj.fdevs@gmail.com</a> dengan judul "Hapus akun ResumeQ" dari alamat email akun Google kamu. Kami memproses permintaan dalam 30 hari.</p>
     </div>
+    <p><strong>Catatan setelah penghapusan:</strong> ketika akun dihapus, kami menyimpan satu catatan kecil berisi alamat email kamu dan tanggal penghapusan. Catatan ini dipakai untuk dua hal: (1) mencegah akun yang sama dibuat ulang selama 3 bulan setelah penghapusan, dan (2) memastikan bonus poin pertama tidak diberikan lagi pada pendaftaran berikutnya dengan email yang sama. Catatan ini tidak berisi resume, foto, maupun poin kamu.</p>
     <p>Data akun disimpan selama akun aktif. Resume yang tidak disinkronkan hanya ada di perangkat dan terhapus saat aplikasi di-uninstall. Data analitik disimpan sesuai pengaturan retensi Firebase Analytics (maksimal 14 bulan).</p>
 
     <h3>7. Anak-anak</h3>
@@ -170,18 +173,20 @@
 
     <h3>1. Data stored on your device</h3>
     <p>ResumeQ works <strong>offline</strong>. Resume content (name, contact details, experience, education, skills, projects, certificates, languages, resume photo) and settings (theme, language, saved colors) are stored on your device. This data is not sent to a server unless you sign in and sync your resumes.</p>
+    <p><strong>On-device processing:</strong> the translation and language-detection features (Google ML Kit) run entirely on your device; the language model is downloaded once and then used offline, and <strong>your resume text is never sent to a server</strong> to be translated. Importing a resume from a PDF (made by ResumeQ or LinkedIn "Save to PDF") is also read and processed on your device; the PDF file is not uploaded to our servers.</p>
 
     <h3>2. Data collected when you sign in with Google</h3>
     <div class="table-wrap">
-    <table>
-      <tr><th>Data</th><th>Purpose</th></tr>
-      <tr><td>Google account name, email, photo, Firebase user ID</td><td>Create and show your account</td></tr>
-      <tr><td>Content of resumes you sync (without the resume photo)</td><td>Back up and restore your resumes on other devices</td></tr>
-      <tr><td>Points balance</td><td>The in-app points feature</td></tr>
-      <tr><td>Notification token (FCM), platform, app version</td><td>Send notifications to your device</td></tr>
-    </table>
+      <table>
+        <tr><th>Data</th><th>Purpose</th></tr>
+        <tr><td>Google account name, email, photo, Firebase user ID</td><td>Create and show your account</td></tr>
+        <tr><td>Content of resumes you sync (without the resume photo)</td><td>Back up and restore your resumes on other devices</td></tr>
+        <tr><td>Points balance</td><td>The in-app points feature (earned by watching ads; spent to create/duplicate/import resumes and to unlock PDFs)</td></tr>
+        <tr><td>Notification token (FCM), platform, app version</td><td>Send notifications to your device</td></tr>
+      </table>
     </div>
     <p>Account data is stored in Google Firebase (Authentication and Cloud Firestore) and can only be read by your own account.</p>
+    <p><strong>Rewarded-ad verification (SSV):</strong> when you watch a rewarded ad to earn points, your Firebase user ID is sent to our verification server (running on Vercel) via Google AdMob, so that points are credited to the correct account and to prevent abuse. Only that user ID is sent — not your name, email, or resume content.</p>
 
     <h3>3. Data collected automatically</h3>
     <ul>
@@ -200,6 +205,7 @@
       <p><strong>Delete your account in the app:</strong> go to <em>Me &rarr; Delete account</em>. This permanently deletes your sign-in account, your account data on the server (synced resumes, points, notification tokens), and that account's resumes on the device. This cannot be undone.</p>
       <p><strong>Without the app:</strong> email <a href="mailto:qj.fdevs@gmail.com?subject=Delete%20ResumeQ%20account">qj.fdevs@gmail.com</a> with the subject "Delete ResumeQ account" from your Google account's email address. We process requests within 30 days.</p>
     </div>
+    <p><strong>What we keep after deletion:</strong> when an account is deleted, we retain a small record containing your email address and the deletion date. This record is used for two things: (1) to prevent the same account from being re-created for 3 months after deletion, and (2) to ensure the first-time points bonus is not granted again on a later sign-up with the same email. This record does not contain your resumes, photo, or points.</p>
     <p>Account data is kept while your account is active. Resumes you don't sync exist only on your device and are removed when you uninstall the app. Analytics data is kept according to Firebase Analytics retention settings (up to 14 months).</p>
 
     <h3>7. Children</h3>
@@ -218,29 +224,29 @@
 
 
 <script>
-(function () {
-  var tabs = document.querySelectorAll('nav.lang a[data-lang]');
-  var panels = { id: document.getElementById('id'), en: document.getElementById('en') };
-  function show(lang) {
-    if (!panels[lang]) lang = 'id';
-    Object.keys(panels).forEach(function (k) { panels[k].hidden = (k !== lang); });
-    tabs.forEach(function (t) {
-      if (t.dataset.lang === lang) t.setAttribute('aria-current', 'true');
-      else t.removeAttribute('aria-current');
+  (function () {
+    var tabs = document.querySelectorAll('nav.lang a[data-lang]');
+    var panels = { id: document.getElementById('id'), en: document.getElementById('en') };
+    function show(lang) {
+      if (!panels[lang]) lang = 'id';
+      Object.keys(panels).forEach(function (k) { panels[k].hidden = (k !== lang); });
+      tabs.forEach(function (t) {
+        if (t.dataset.lang === lang) t.setAttribute('aria-current', 'true');
+        else t.removeAttribute('aria-current');
+      });
+      document.documentElement.lang = lang;
+    }
+    document.querySelectorAll('a[href="#id"], a[href="#en"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        var lang = a.getAttribute('href').slice(1);
+        show(lang);
+        try { history.replaceState(null, '', '#' + lang); } catch (err) {}
+      });
     });
-    document.documentElement.lang = lang;
-  }
-  document.querySelectorAll('a[href="#id"], a[href="#en"]').forEach(function (a) {
-    a.addEventListener('click', function (e) {
-      e.preventDefault();
-      var lang = a.getAttribute('href').slice(1);
-      show(lang);
-      try { history.replaceState(null, '', '#' + lang); } catch (err) {}
-    });
-  });
-  window.addEventListener('hashchange', function () { show(location.hash.slice(1)); });
-  show(location.hash === '#en' ? 'en' : 'id');
-})();
+    window.addEventListener('hashchange', function () { show(location.hash.slice(1)); });
+    show(location.hash === '#en' ? 'en' : 'id');
+  })();
 </script>
 
 </body>
